@@ -1,0 +1,259 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Gallery - Bengali Kali Mandir</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#ffffff",
+                        "surface": "#fff8f6",
+                        "outline": "#8e706c",
+                        "surface-container": "#ffe9e5",
+                        "surface-variant": "#ffdad4",
+                        "primary-fixed": "#ffdad4",
+                        "tertiary-container": "#bdac52",
+                        "primary-fixed-dim": "#ffb4a8",
+                        "inverse-primary": "#ffb4a8",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#dac769",
+                        "primary-container": "#800000",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#ffedea",
+                        "on-tertiary-fixed-variant": "#524700",
+                        "on-surface": "#2b1613",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed": "#ffdad3",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#f8d1cb",
+                        "secondary-container": "#fd876f",
+                        "inverse-surface": "#422a26",
+                        "secondary-fixed-dim": "#ffb4a5",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "tertiary": "#6c5e06",
+                        "outline-variant": "#e2bfb9",
+                        "surface-tint": "#b22b1d",
+                        "surface-container-highest": "#ffdad4",
+                        "on-background": "#2b1613",
+                        "tertiary-fixed": "#f7e382",
+                        "surface-bright": "#fff8f6",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#8f0f07",
+                        "on-tertiary-container": "#4a3f00",
+                        "on-secondary-container": "#732010",
+                        "surface-container-low": "#fff0ee",
+                        "on-surface-variant": "#5a413d",
+                        "on-secondary-fixed-variant": "#802918",
+                        "on-primary-fixed": "#410000",
+                        "on-secondary-fixed": "#3e0500",
+                        "secondary": "#9f402d",
+                        "background": "#fff8f6",
+                        "primary": "#570000",
+                        "on-tertiary-fixed": "#211b00",
+                        "surface-container-high": "#ffe2dd",
+                        "on-primary-container": "#ff8371"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Playfair Display"],
+                        "display": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "body-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-sm": ["Playfair Display"],
+                        "label-caps": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg-mobile": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["48px", { "lineHeight": "56px", "fontWeight": "700" }],
+                        "display": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .masonry-grid {
+            column-count: 1;
+            column-gap: 16px;
+        }
+        @media (min-width: 640px) { .masonry-grid { column-count: 2; } }
+        @media (min-width: 1024px) { .masonry-grid { column-count: 3; } }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar (Desktop) -->
+<nav class="hidden md:flex justify-between items-center px-margin-desktop py-4 w-full z-50 bg-surface/95 backdrop-blur-md border-b border-outline-variant sticky top-0 full-width transition-all duration-300">
+<div class="font-headline-sm text-headline-sm text-primary">Kali Mandir</div>
+<div class="flex gap-gutter">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300 py-2" href="#">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300 py-2" href="#">About</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300 py-2" href="#">Puja &amp; Seva</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300 py-2" href="#">Calendar</a>
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1 py-2 opacity-80 transition-all" href="#">Gallery</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300 py-2" href="#">Visit Us</a>
+</div>
+<button class="font-label-caps text-label-caps bg-primary text-on-primary px-6 py-3 rounded hover:opacity-90 transition-opacity">Donate</button>
+</nav>
+<!-- SideNavBar (Mobile) -->
+<div class="md:hidden flex justify-between items-center p-margin-mobile bg-surface sticky top-0 z-50 border-b border-outline-variant">
+<div class="font-headline-sm text-headline-sm text-primary">Kali Mandir</div>
+<button class="p-2 text-primary" id="mobile-menu-btn">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+<!-- Mobile Menu Overlay -->
+<div class="fixed inset-0 bg-surface-container-low z-[60] hidden flex-col h-full p-4 transform translate-x-full transition-transform duration-300" id="mobile-menu">
+<div class="flex justify-between items-center mb-8">
+<div class="flex items-center gap-4">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Kali Mandir</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Community &amp; Devotion</p>
+</div>
+</div>
+<button class="p-2 text-primary" id="close-menu-btn">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-2 flex-grow">
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-2 hover:bg-surface-variant rounded-full transition-colors" href="#"><span class="material-symbols-outlined">home</span> <span class="font-body-md text-body-md">Home</span></a>
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-2 hover:bg-surface-variant rounded-full transition-colors" href="#"><span class="material-symbols-outlined">info</span> <span class="font-body-md text-body-md">About</span></a>
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-2 hover:bg-surface-variant rounded-full transition-colors" href="#"><span class="material-symbols-outlined">celebration</span> <span class="font-body-md text-body-md">Festivals</span></a>
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-2 hover:bg-surface-variant rounded-full transition-colors" href="#"><span class="material-symbols-outlined">auto_awesome</span> <span class="font-body-md text-body-md">Puja &amp; Seva</span></a>
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-2 hover:bg-surface-variant rounded-full transition-colors" href="#"><span class="material-symbols-outlined">calendar_month</span> <span class="font-body-md text-body-md">Calendar</span></a>
+<a class="flex items-center gap-4 bg-primary-container text-on-primary-container rounded-full px-4 py-2 font-bold scale-95 transition-transform" href="#"><span class="material-symbols-outlined">photo_library</span> <span class="font-body-md text-body-md">Gallery</span></a>
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-2 hover:bg-surface-variant rounded-full transition-colors" href="#"><span class="material-symbols-outlined">volunteer_activism</span> <span class="font-body-md text-body-md">Donate</span></a>
+<a class="flex items-center gap-4 text-on-surface-variant px-4 py-2 hover:bg-surface-variant rounded-full transition-colors" href="#"><span class="material-symbols-outlined">location_on</span> <span class="font-body-md text-body-md">Visit Us</span></a>
+</nav>
+<button class="w-full bg-primary text-on-primary font-label-caps text-label-caps py-4 rounded mt-4">Donate Now</button>
+</div>
+<!-- Main Content Canvas -->
+<main class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24">
+<!-- Header -->
+<header class="mb-16 text-center max-w-3xl mx-auto">
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">Gallery</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">A visual journey through our rich cultural heritage, sacred ceremonies, and vibrant community celebrations. Experience the spiritual essence of the Mandir through these captured moments.</p>
+<div class="h-px w-24 bg-outline-variant mx-auto mt-8"></div>
+</header>
+<!-- Masonry Grid -->
+<div class="masonry-grid">
+<!-- Item 1 -->
+<div class="masonry-item relative group overflow-hidden rounded-xl border border-outline-variant/30 bg-surface-container-low transition-all duration-300 hover:shadow-[0_4px_12px_rgba(87,0,0,0.08)] hover:-translate-y-1">
+<img alt="Festival Celebration" class="w-full h-auto object-cover rounded-t-xl" data-alt="A highly detailed photograph capturing a traditional Bengali Hindu festival inside a grand temple. Warm, golden hour lighting highlights the intricate terracotta architectural details. Devotees in vibrant traditional clothing offer prayers. The mood is deeply spiritual, communal, and culturally rich, with a soft, natural photographic style favoring warm maroon and ivory tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDx0xmUrkBzBEJMnzB8LTkOsXrWQsyVD8aofcYyuMnZni7E_-Zy8hfslOHGSRnwiO51rpAIZmord-zbWhEuK3Ay-VO3FZa-brzWAHfygsU22Z5c2bzlb0JPr54KM34CrPWTDFTFV15IykK6KFI9ExYeZKbHvUYVPHaA-stswrWpPHU0RWGEMk0CynRTpcBIHtirgB1O0KUv24bhWjQr6EU6XzMrKyQTgQoEBF72gz2gbfiOoCu2b36q">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="absolute bottom-0 left-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
+<p class="font-body-md text-body-md text-on-primary">Durga Puja Celebrations</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="masonry-item relative group overflow-hidden rounded-xl border border-outline-variant/30 bg-surface-container-low transition-all duration-300 hover:shadow-[0_4px_12px_rgba(87,0,0,0.08)] hover:-translate-y-1">
+<img alt="Temple Architecture" class="w-full h-auto object-cover rounded-t-xl" data-alt="A close-up, high-quality photograph of intricate terracotta relief panels on an ancient Indian temple wall. The sunlight casts soft, dimensional shadows across the detailed carvings of deities and floral patterns. The color palette is strictly deep reds, terracottas, and weathered stone. The aesthetic is historical, textured, and reverent, shot with professional architectural photography precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1dpmajqxOn_A7F9YwxPyFz8tWh3r8QbwidsBtxod3JFpmXFLxYvq5RlXVysN-1XXM7UFz5llDgUROBHtk51-Evvr0I847-Q3IpEBbW4xyxG3dg-0mMsei5v90ECm03FIBauAQsTkIBLqlAzLWCav_z53f2iIca0GNrpEAKgTCraqM-uhCMsv82Lkt8ANcMGXmVBpVHRO727eoxUoXS2DguspVWprffQj8GZrd8kRN84513RBgKD4F">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="absolute bottom-0 left-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
+<p class="font-body-md text-body-md text-on-primary">Terracotta Details</p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="masonry-item relative group overflow-hidden rounded-xl border border-outline-variant/30 bg-surface-container-low transition-all duration-300 hover:shadow-[0_4px_12px_rgba(87,0,0,0.08)] hover:-translate-y-1">
+<img alt="Evening Aarti" class="w-full h-auto object-cover rounded-t-xl" data-alt="A serene photograph of an evening Aarti ceremony at a temple. Warm light from countless oil lamps (diyas) illuminates the dark surroundings, creating a glowing, spiritual atmosphere. A priest in traditional attire holds a large flaming lamp. The mood is meditative and reverent, with a rich color palette of deep blacks, glowing oranges, and warm golds." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKlh-NdbVf7dpySp04jLV-LSZGkZEDFCPtEUI9c8Iie2Qr9jryiDgNX6tPKciA6_Pd2zkJh_5kq20B8DL9Y-nrXSt-f9-xSNVEW52uwVppKFVQ7kkl2PmimVn8fm-dzv1kxDOdSoG7cfyW8cg0LtyerHnignt1tZ2s2Gtfd7YnXWJGyVYlI-m8b1geB28vP0sZW9nBANqs1EA9BMCvu2CN8b2EQtPZG0R85BYd7c0W8-LQq18ygtgn">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="absolute bottom-0 left-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
+<p class="font-body-md text-body-md text-on-primary">Evening Sandhya Aarti</p>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="masonry-item relative group overflow-hidden rounded-xl border border-outline-variant/30 bg-surface-container-low transition-all duration-300 hover:shadow-[0_4px_12px_rgba(87,0,0,0.08)] hover:-translate-y-1">
+<img alt="Community Event" class="w-full h-auto object-cover rounded-t-xl" data-alt="A vibrant photograph showing a community feast (Bhandara) in a temple courtyard. People sit in rows on the floor, eating from traditional leaf plates. The scene is full of life, community spirit, and cultural authenticity. Brightly colored saris and warm daylight create a cheerful, communal mood. The aesthetic is candid, documentary-style photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW5kGuzGcSd1NdRwtWYzD5PtfEzreAhBCAEErwtsgHdXWFrnqzJobwzrR8HlPlBnZbrtjqQIKlH7q3rzQEGfw_4WudhEw733Wtv-rhjugDl9brG2_695u0giqtQqhAgQYT91IViBBQL1_5R2lqSAifbu0ld5bZxMmbsR7L5B-MC2P9ejR44TYcwKq_Zq-gtaRfbNBLYYXTic7l-JU-NHnZ2ZntlvTH8MjDoj3NAxA4_znR0fcYNYsK">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="absolute bottom-0 left-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
+<p class="font-body-md text-body-md text-on-primary">Community Anandamela</p>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="masonry-item relative group overflow-hidden rounded-xl border border-outline-variant/30 bg-surface-container-low transition-all duration-300 hover:shadow-[0_4px_12px_rgba(87,0,0,0.08)] hover:-translate-y-1">
+<img alt="Alpana Art" class="w-full h-auto object-cover rounded-t-xl" data-alt="A macro photograph of beautiful, intricate Alpana (traditional Bengali floor art) drawn with white rice paste on a terracotta-colored floor. The geometric and floral patterns are crisp and delicate. Soft, diffused lighting highlights the texture of the paste and the floor. The image conveys a sense of meticulous preparation and artistic tradition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD57gc_3hF6L0fZ8lBSoz7eFbHvr4N7-JVrE-S8RxG-vS_U0jVn9AE6zLzQj1hRlzjl9356Mm538HtYuCFiCJmfQs-ygdNgmuYkCfx1knn9D7KKLvj8bd_69XRM3qGXwfCc3N5Ajt4au5ZCiGX0E0c_dwTOcCjvNsKsh0p2i9tycecdC9Mdh3MmNyEpy-khYY55d0MO7aftI50F5WZn3DKn9KmjMpPD6oxYJa5IRJclM_gps_gje00U">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="absolute bottom-0 left-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
+<p class="font-body-md text-body-md text-on-primary">Traditional Alpana</p>
+</div>
+</div>
+<!-- Item 6 -->
+<div class="masonry-item relative group overflow-hidden rounded-xl border border-outline-variant/30 bg-surface-container-low transition-all duration-300 hover:shadow-[0_4px_12px_rgba(87,0,0,0.08)] hover:-translate-y-1">
+<img alt="Temple Exterior" class="w-full h-auto object-cover rounded-t-xl" data-alt="A majestic wide shot of the temple exterior during a clear, sunny morning. The grand architecture features traditional curved roofs and intricate detailing. The building is framed by lush green trees against a bright blue sky. The visual style is clean, editorial, and awe-inspiring, emphasizing the sanctuary's scale and beauty within a light-mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEM3Xohbcx12AStvdk1LRsFaT-tznx8YJmjj0DZXXq3Li5EXXCgk4hfAcF4HLGqBvEDdN4THH-pz7JsfR2NymDdS9uUdErECYqisS3ZlsILJ7wsECUUAgvw_u6SI3rrM2hgrVJ7BhWTro8NxV2PgdePWA5im3qOy-lFp2nMkPr3mOhJH7Ucs2wP75oeAi0e42hjoP_9K9KG1jzCcHunMJRf83zMfVtJBz3gih51iN75LrRBYTMUu9I">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+<div class="absolute bottom-0 left-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
+<p class="font-body-md text-body-md text-on-primary">Mandir Architecture</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-desktop py-12 w-full bg-primary-container dark:bg-primary-container">
+<div class="flex flex-col gap-4">
+<div class="font-headline-md text-headline-md text-on-primary-container">Kali Mandir</div>
+<p class="font-body-sm text-body-sm text-on-primary-container opacity-90">© 2024 Bengali Kali Mandir. All Rights Reserved.</p>
+</div>
+<div class="flex flex-col gap-2">
+<a class="font-body-sm text-body-sm text-on-primary-container opacity-90 hover:opacity-100 hover:text-secondary-fixed transition-opacity Default link transitions" href="#">Contact Assistance: +91 000-000-0000</a>
+<a class="font-body-sm text-body-sm text-on-primary-container opacity-90 hover:opacity-100 hover:text-secondary-fixed transition-opacity Default link transitions" href="#">Email: help@kalimandir.org</a>
+</div>
+<div class="flex flex-col gap-2">
+<a class="font-body-sm text-body-sm text-on-primary-container opacity-90 hover:opacity-100 hover:text-secondary-fixed transition-opacity Default link transitions" href="#">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-on-primary-container opacity-90 hover:opacity-100 hover:text-secondary-fixed transition-opacity Default link transitions" href="#">Terms of Service</a>
+</div>
+</footer>
+<script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+            // Small delay to allow display:block to apply before animating transform
+            setTimeout(() => {
+                mobileMenu.classList.remove('translate-x-full');
+            }, 10);
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        });
+
+        closeMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-x-full');
+            setTimeout(() => {
+                mobileMenu.classList.add('hidden');
+            }, 300); // Match transition duration
+            document.body.style.overflow = ''; // Restore scrolling
+        });
+    </script>
+</body></html>

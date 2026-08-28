@@ -1,0 +1,383 @@
+<!DOCTYPE html><html class="light" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>About Us - Bengali Kali Mandir</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#ffffff",
+                        "surface": "#fff8f6",
+                        "outline": "#8e706c",
+                        "surface-container": "#ffe9e5",
+                        "surface-variant": "#ffdad4",
+                        "primary-fixed": "#ffdad4",
+                        "tertiary-container": "#bdac52",
+                        "primary-fixed-dim": "#ffb4a8",
+                        "inverse-primary": "#ffb4a8",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#dac769",
+                        "primary-container": "#800000",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#ffedea",
+                        "on-tertiary-fixed-variant": "#524700",
+                        "on-surface": "#2b1613",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed": "#ffdad3",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#f8d1cb",
+                        "secondary-container": "#fd876f",
+                        "inverse-surface": "#422a26",
+                        "secondary-fixed-dim": "#ffb4a5",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "tertiary": "#6c5e06",
+                        "outline-variant": "#e2bfb9",
+                        "surface-tint": "#b22b1d",
+                        "surface-container-highest": "#ffdad4",
+                        "on-background": "#2b1613",
+                        "tertiary-fixed": "#f7e382",
+                        "surface-bright": "#fff8f6",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#8f0f07",
+                        "on-tertiary-container": "#4a3f00",
+                        "on-secondary-container": "#732010",
+                        "surface-container-low": "#fff0ee",
+                        "on-surface-variant": "#5a413d",
+                        "on-secondary-fixed-variant": "#802918",
+                        "on-primary-fixed": "#410000",
+                        "on-secondary-fixed": "#3e0500",
+                        "secondary": "#9f402d",
+                        "background": "#fff8f6",
+                        "primary": "#570000",
+                        "on-tertiary-fixed": "#211b00",
+                        "surface-container-high": "#ffe2dd",
+                        "on-primary-container": "#ff8371"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Playfair Display"],
+                        "display": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "body-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-sm": ["Playfair Display"],
+                        "label-caps": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg-mobile": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["48px", { "lineHeight": "56px", "fontWeight": "700" }],
+                        "display": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .alpona-pattern {
+            background-image: radial-gradient(circle at center, rgba(142, 112, 108, 0.05) 2px, transparent 2px), radial-gradient(circle at center, rgba(142, 112, 108, 0.05) 2px, transparent 2px);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
+        }
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 2px;
+            background-color: #e2bfb9;
+            transform: translateX(-50%);
+        }
+        @media (max-width: 768px) {
+            .timeline-line::before {
+                left: 20px;
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar (Desktop) -->
+<nav class="hidden md:flex justify-between items-center px-margin-desktop py-4 w-full z-50 bg-surface/95 backdrop-blur-md full-width top-0 sticky border-b border-outline-variant flat no shadows">
+<div class="font-headline-sm text-headline-sm text-primary tracking-tight">
+            Kali Mandir
+        </div>
+<div class="flex items-center gap-gutter">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Home</a>
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1 hover:text-primary transition-colors duration-300 Active: opacity-80 transition-all" href="#">About</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Puja &amp; Seva</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Calendar</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Gallery</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Visit Us</a>
+</div>
+<button class="bg-primary text-on-primary font-label-caps text-label-caps px-6 py-2 rounded shadow-sm hover:bg-on-primary-fixed-variant transition-colors">
+            Donate
+        </button>
+</nav>
+<!-- SideNavBar (Mobile) - Hidden by default, toggled via JS -->
+<div class="fixed inset-0 bg-surface-container-low z-50 transform -translate-x-full transition-transform duration-300 lg:hidden flex flex-col h-full p-4" id="mobile-nav">
+<div class="flex justify-between items-center mb-8">
+<div class="font-headline-sm text-headline-sm text-primary">Kali Mandir</div>
+<button class="text-on-surface p-2" id="close-mobile-nav">
+<span class="material-symbols-outlined text-2xl">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-4 font-body-md text-body-md">
+<a class="text-on-surface-variant px-4 py-2 flex items-center gap-4 hover:bg-surface-variant rounded-full transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 0;">home</span> Home
+            </a>
+<a class="bg-primary-container text-on-primary-container rounded-full px-4 py-2 font-bold flex items-center gap-4 Active: scale-95 transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">info</span> About
+            </a>
+<a class="text-on-surface-variant px-4 py-2 flex items-center gap-4 hover:bg-surface-variant rounded-full transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 0;">celebration</span> Festivals
+            </a>
+<a class="text-on-surface-variant px-4 py-2 flex items-center gap-4 hover:bg-surface-variant rounded-full transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 0;">auto_awesome</span> Puja &amp; Seva
+            </a>
+<a class="text-on-surface-variant px-4 py-2 flex items-center gap-4 hover:bg-surface-variant rounded-full transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 0;">calendar_month</span> Calendar
+            </a>
+<a class="text-on-surface-variant px-4 py-2 flex items-center gap-4 hover:bg-surface-variant rounded-full transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 0;">photo_library</span> Gallery
+            </a>
+<a class="text-on-surface-variant px-4 py-2 flex items-center gap-4 hover:bg-surface-variant rounded-full transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 0;">volunteer_activism</span> Donate
+            </a>
+<a class="text-on-surface-variant px-4 py-2 flex items-center gap-4 hover:bg-surface-variant rounded-full transition-colors" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 0;">location_on</span> Visit Us
+            </a>
+</div>
+<div class="mt-auto pt-8">
+<button class="w-full bg-primary text-on-primary font-label-caps text-label-caps px-6 py-3 rounded-full shadow-sm">
+                Donate Now
+            </button>
+</div>
+</div>
+<!-- Mobile Header Trigger -->
+<header class="md:hidden flex justify-between items-center px-margin-mobile py-4 bg-surface/95 backdrop-blur-md sticky top-0 z-40 border-b border-outline-variant">
+<div class="font-headline-sm text-headline-sm text-primary">Kali Mandir</div>
+<button class="text-on-surface p-2" id="open-mobile-nav">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24">
+<!-- Hero Section -->
+<section class="mb-24 md:mb-32">
+<div class="relative h-[614px] min-h-[400px] w-full rounded-lg overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A grand historical terracotta temple in Bengal during early morning light. The structure features intricate red clay carvings and traditional curved roofs typical of Bengali architecture. Soft, warm sunlight filters through ancient banyan trees, casting long shadows on the stone courtyard. The scene is majestic, deeply spiritual, and richly textured, utilizing a palette of earthy terracottas, warm ivories, and deep muted greens. The image conveys a sense of enduring heritage and peaceful reverence." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDBO0MRLucx05Dr0RVOvOMh-lV0rmMgJ50Fh2guo78sindXdkEP36REJgDYmtRHVw-AhY6828dJ3bpFLgZYQ-yEr7XqiYlywkfajRxks8MTimpcWXPWLz7MOyf1KfBXF-dqBIQZ-4raXpK4D1sHMfM_QagYZWV-ip0TP5DNZCcg2v2JVlodiiFNFl0nciwcvtYmVqAwKNlF47jM-CBqvfJDwibZJgIzdZmPdLiCfotEmF2iG5XLZCKp&quot;);"></div>
+<div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+<div class="relative z-10 text-center max-w-3xl mx-auto px-4">
+<h1 class="font-display text-display md:font-headline-lg md:text-headline-lg text-on-primary drop-shadow-md mb-6">Our Heritage &amp; Devotion</h1>
+<p class="font-body-lg text-body-lg text-on-primary/90 drop-shadow max-w-2xl mx-auto">
+                        A sanctuary of peace and cultural preservation, rooted in the timeless traditions of Bengal.
+                    </p>
+</div>
+</div>
+<div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary mb-6">Preserving Tradition in the Modern World</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                        Since its inception, the Bengali Kali Mandir has stood as a beacon of cultural identity and spiritual solace. Our mission extends beyond daily worship; it encompasses the preservation of rich Bengali heritage, art, and community bonds.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        We welcome devotees and visitors from all walks of life to experience the tranquility, partake in our vibrant festivals, and contribute to a legacy that spans generations.
+                    </p>
+</div>
+<div class="relative p-8 bg-surface-container-low rounded-lg border border-outline-variant/30 alpona-pattern">
+<div class="bg-surface p-6 rounded shadow-sm border border-outline-variant/50 relative z-10">
+<span class="material-symbols-outlined text-4xl text-tertiary-container mb-4 block text-center" style="font-variation-settings: &quot;FILL&quot; 1;">temple_hindu</span>
+<blockquote class="font-headline-sm text-headline-sm text-on-surface text-center italic">
+                            "A temple is not merely a structure of stone and clay, but the beating heart of a community's devotion and shared history."
+                        </blockquote>
+</div>
+</div>
+</div>
+</section>
+<!-- Historical Timeline Section -->
+<section class="mb-24 md:mb-32">
+<div class="text-center mb-16">
+<h2 class="font-headline-md text-headline-md text-primary">Journey Through Time</h2>
+<div class="h-px w-24 bg-tertiary-container mx-auto mt-4"></div>
+</div>
+<div class="relative timeline-line py-8">
+<!-- 1978 -->
+<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group mb-16 w-full">
+<div class="hidden md:block w-5/12"></div>
+<div class="z-10 flex items-center justify-center w-10 h-10 rounded-full bg-surface border-2 border-tertiary-container shadow-sm md:mx-auto absolute left-[20px] md:left-1/2 -translate-x-1/2">
+<div class="w-3 h-3 bg-primary rounded-full group-hover:scale-150 transition-transform duration-300"></div>
+</div>
+<div class="w-full md:w-5/12 pl-16 md:pl-0 md:px-8 md:text-right group-odd:md:text-left">
+<div class="bg-surface-container-lowest p-6 rounded-lg border border-outline-variant/50 shadow-sm group-hover:shadow-md transition-shadow duration-300">
+<span class="font-headline-sm text-headline-sm text-secondary block mb-2">1978</span>
+<h3 class="font-headline-md text-headline-md text-on-surface text-[24px] mb-3">Mandir Established</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">The foundation stone was laid by a small group of devoted families, marking the beginning of our spiritual journey.</p>
+</div>
+</div>
+</div>
+<!-- 1985 -->
+<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group mb-16 w-full">
+<div class="hidden md:block w-5/12"></div>
+<div class="z-10 flex items-center justify-center w-10 h-10 rounded-full bg-surface border-2 border-tertiary-container shadow-sm md:mx-auto absolute left-[20px] md:left-1/2 -translate-x-1/2">
+<div class="w-3 h-3 bg-primary rounded-full group-hover:scale-150 transition-transform duration-300"></div>
+</div>
+<div class="w-full md:w-5/12 pl-16 md:pl-0 md:px-8 md:text-right group-odd:md:text-left">
+<div class="bg-surface-container-lowest p-6 rounded-lg border border-outline-variant/50 shadow-sm group-hover:shadow-md transition-shadow duration-300">
+<span class="font-headline-sm text-headline-sm text-secondary block mb-2">1985</span>
+<h3 class="font-headline-md text-headline-md text-on-surface text-[24px] mb-3">First Durga Puja</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">The community hosted its first grand Durga Puja celebration, establishing a tradition that continues to draw thousands today.</p>
+</div>
+</div>
+</div>
+<!-- 1998 -->
+<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group mb-16 w-full">
+<div class="hidden md:block w-5/12"></div>
+<div class="z-10 flex items-center justify-center w-10 h-10 rounded-full bg-surface border-2 border-tertiary-container shadow-sm md:mx-auto absolute left-[20px] md:left-1/2 -translate-x-1/2">
+<div class="w-3 h-3 bg-primary rounded-full group-hover:scale-150 transition-transform duration-300"></div>
+</div>
+<div class="w-full md:w-5/12 pl-16 md:pl-0 md:px-8 md:text-right group-odd:md:text-left">
+<div class="bg-surface-container-lowest p-6 rounded-lg border border-outline-variant/50 shadow-sm group-hover:shadow-md transition-shadow duration-300">
+<span class="font-headline-sm text-headline-sm text-secondary block mb-2">1998</span>
+<h3 class="font-headline-md text-headline-md text-on-surface text-[24px] mb-3">Main Shrine Expansion</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">The central temple structure was significantly expanded, incorporating authentic terracotta architectural elements imported from Bengal.</p>
+</div>
+</div>
+</div>
+<!-- 2010 -->
+<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group mb-16 w-full">
+<div class="hidden md:block w-5/12"></div>
+<div class="z-10 flex items-center justify-center w-10 h-10 rounded-full bg-surface border-2 border-tertiary-container shadow-sm md:mx-auto absolute left-[20px] md:left-1/2 -translate-x-1/2">
+<div class="w-3 h-3 bg-primary rounded-full group-hover:scale-150 transition-transform duration-300"></div>
+</div>
+<div class="w-full md:w-5/12 pl-16 md:pl-0 md:px-8 md:text-right group-odd:md:text-left">
+<div class="bg-surface-container-lowest p-6 rounded-lg border border-outline-variant/50 shadow-sm group-hover:shadow-md transition-shadow duration-300">
+<span class="font-headline-sm text-headline-sm text-secondary block mb-2">2010</span>
+<h3 class="font-headline-md text-headline-md text-on-surface text-[24px] mb-3">Community Hall Inauguration</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">A dedicated cultural space was opened to host educational programs, classical arts performances, and community gatherings.</p>
+</div>
+</div>
+</div>
+<!-- 2020 -->
+<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group w-full">
+<div class="hidden md:block w-5/12"></div>
+<div class="z-10 flex items-center justify-center w-10 h-10 rounded-full bg-surface border-2 border-tertiary-container shadow-sm md:mx-auto absolute left-[20px] md:left-1/2 -translate-x-1/2">
+<div class="w-3 h-3 bg-primary rounded-full group-hover:scale-150 transition-transform duration-300"></div>
+</div>
+<div class="w-full md:w-5/12 pl-16 md:pl-0 md:px-8 md:text-right group-odd:md:text-left">
+<div class="bg-surface-container-lowest p-6 rounded-lg border border-outline-variant/50 shadow-sm group-hover:shadow-md transition-shadow duration-300">
+<span class="font-headline-sm text-headline-sm text-secondary block mb-2">2020</span>
+<h3 class="font-headline-md text-headline-md text-on-surface text-[24px] mb-3">Digital Preservation Initiative</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Launched comprehensive digital archives to preserve rare manuscripts, devotional songs, and the oral history of our founders.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Office Bearers Section -->
+<section>
+<div class="text-center mb-12">
+<h2 class="font-headline-md text-headline-md text-primary">Office Bearers</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-xl mx-auto">Dedicated individuals serving the community and guiding the Mandir's vision.</p>
+</div>
+<div class="overflow-x-auto bg-surface-container-lowest rounded-lg border border-outline-variant/30 shadow-sm">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-secondary-container/10 border-b border-outline-variant/50">
+<th class="font-label-caps text-label-caps text-on-surface py-4 px-6">Position</th>
+<th class="font-label-caps text-label-caps text-on-surface py-4 px-6">Name</th>
+<th class="font-label-caps text-label-caps text-on-surface py-4 px-6">Contact</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm text-on-surface-variant">
+<tr class="border-b border-outline-variant/20 hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-6 font-semibold text-primary">President</td>
+<td class="py-4 px-6">Dr. Anindya Chatterjee</td>
+<td class="py-4 px-6">+1 (555) 123-4567</td>
+</tr>
+<tr class="border-b border-outline-variant/20 hover:bg-surface-container-low transition-colors">
+
+
+
+</tr>
+<tr class="border-b border-outline-variant/20 hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-6 font-semibold text-primary">&nbsp;Secretary</td>
+<td class="py-4 px-6">Mr. Subhashis Das</td>
+<td class="py-4 px-6">+1 (555) 345-6789</td>
+</tr>
+<tr class="border-b border-outline-variant/20 hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-6 font-semibold text-primary">Treasurer</td>
+<td class="py-4 px-6">Mr. Pratik Mukherjee</td>
+<td class="py-4 px-6">+1 (555) 456-7890</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-4 px-6 font-semibold text-primary">Manager</td>
+<td class="py-4 px-6">Ms. Rupa Banerjee</td>
+<td class="py-4 px-6">+1 (555) 567-8901</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary-container dark:bg-primary-container grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-desktop py-12 w-full mt-24">
+<div>
+<div class="font-headline-md text-headline-md text-on-primary-container mb-4">Kali Mandir</div>
+<p class="font-body-sm text-body-sm text-on-primary-container opacity-90 mb-2">Contact Assistance: +91 000-000-0000</p>
+<p class="font-body-sm text-body-sm text-on-primary-container opacity-90">Email: help@kalimandir.org</p>
+</div>
+<div class="flex flex-col gap-2 font-body-sm text-body-sm">
+<a class="text-on-primary-container opacity-90 hover:opacity-100 hover:text-secondary-fixed transition-opacity" href="#">Privacy Policy</a>
+<a class="text-on-primary-container opacity-90 hover:opacity-100 hover:text-secondary-fixed transition-opacity" href="#">Terms of Service</a>
+</div>
+<div class="md:text-right flex flex-col justify-end">
+<p class="font-body-sm text-body-sm text-on-primary-container opacity-70">© 2024 Bengali Kali Mandir. All Rights Reserved.</p>
+</div>
+</footer>
+<script>
+        // Mobile Nav Toggle Logic
+        const openNavBtn = document.getElementById('open-mobile-nav');
+        const closeNavBtn = document.getElementById('close-mobile-nav');
+        const mobileNav = document.getElementById('mobile-nav');
+
+        openNavBtn.addEventListener('click', () => {
+            mobileNav.classList.remove('-translate-x-full');
+        });
+
+        closeNavBtn.addEventListener('click', () => {
+            mobileNav.classList.add('-translate-x-full');
+        });
+    </script>
+
+
+</body></html>
