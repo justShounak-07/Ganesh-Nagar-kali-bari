@@ -15,11 +15,16 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Bengali Kali Mandir",
-  description: "A sanctuary of devotion and community. Preserving traditional Bengali heritage.",
+  title: "Ganesh Nagar Kali Bari",
+  description:
+    "A sanctuary of devotion and community. Preserving traditional Bengali heritage.",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html
       lang="en"
