@@ -48,22 +48,21 @@ export const TopNavBar: React.FC = () => {
 
   return (
     <nav className="sticky top-0 z-50 w-full border-b border-outline-variant bg-surface/95 backdrop-blur-md transition-all duration-300">
-      <div className="mx-auto flex max-w-container-max items-center justify-between px-margin-mobile py-4.5 md:px-margin-desktop">
+      <div className="flex w-full items-center justify-between gap-6 px-4 py-2 md:px-8">
         {/* Brand Logo */}
-        <Link
-          href="/"
-          className="flex items-center gap-2 font-display text-xl font-bold text-primary transition-colors hover:text-secondary"
-        >
-          <img
-            src="/assets/KaliBari-logo.png"
-            alt="Kali Bari Logo"
-            className="h-9 w-9 object-contain rounded-full"
-          />
-          <span>{siteContent.brand.name}</span>
+        <Link href="/" className="flex items-center gap-4 font-display text-lg md:text-xl font-bold text-primary transition-colors hover:text-secondary">
+          <div className="relative w-20 h-8 flex-shrink-0">
+            <img
+              src="/assets/KaliBari-logo.png"
+              alt="Kali Bari Logo"
+              className="absolute top-[-6px] left-0 w-20 h-20 max-w-none object-contain rounded-full bg-white shadow-md z-10 border border-outline-variant/30"
+            />
+          </div>
+          <span className="pl-2 whitespace-nowrap">{siteContent.brand.name}</span>
         </Link>
 
         {/* Desktop Navigation (Switches to mobile at xl breakpoint to handle 9 links beautifully) */}
-        <div className="hidden xl:flex items-center gap-8">
+        <div className="hidden xl:flex items-center gap-8 ml-auto">
           <ul className="flex items-center gap-8">
             {navLinks.map((link) => {
               if (link.hasDropdown) {
@@ -86,7 +85,7 @@ export const TopNavBar: React.FC = () => {
                     onMouseLeave={() => setIsOpen(false)}
                   >
                     <button
-                      className={`flex items-center gap-1 font-sans text-sm font-semibold uppercase tracking-wider transition-colors duration-300 cursor-pointer py-1.5 ${
+                      className={`flex items-center gap-1 font-sans text-sm font-semibold uppercase tracking-wider transition-colors duration-300 cursor-pointer py-1.5 whitespace-nowrap ${
                         isSubActive
                           ? "text-primary border-b-2 border-primary"
                           : "text-on-surface-variant hover:text-primary"
@@ -125,7 +124,7 @@ export const TopNavBar: React.FC = () => {
                 <li key={link.name}>
                   <Link
                     href={link.path}
-                    className={`font-sans text-sm font-semibold uppercase tracking-wider transition-colors duration-300 pb-1.5 ${
+                    className={`font-sans text-sm font-semibold uppercase tracking-wider transition-colors duration-300 pb-1.5 whitespace-nowrap ${
                       isActive
                         ? "text-primary border-b-2 border-primary"
                         : "text-on-surface-variant hover:text-primary"
