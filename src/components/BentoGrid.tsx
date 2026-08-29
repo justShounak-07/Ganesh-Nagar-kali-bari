@@ -27,7 +27,10 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ items, mode }) => {
           // A full chunk has 4 items. If it's a partial chunk (e.g. less than 4), we render them as standard cards.
           if (chunk.length < 4) {
             return (
-              <div key={chunkIndex} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div
+                key={chunkIndex}
+                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+              >
                 {chunk.map((item, idx) => (
                   <div
                     key={item.name || idx}
@@ -66,9 +69,12 @@ export const BentoGrid: React.FC<BentoGridProps> = ({ items, mode }) => {
           // Item 2 (Saraswati Puja) -> md:col-span-4 (Row 2, image on top, text below on white surface)
           // Item 3 (Maha Shivaratri) -> md:col-span-4 (Row 2, image on top, text below on white surface)
           return (
-            <div key={chunkIndex} className="grid grid-cols-1 md:grid-cols-12 gap-6">
+            <div
+              key={chunkIndex}
+              className="grid grid-cols-1 md:grid-cols-12 gap-6"
+            >
               {/* Card 0: Kali Puja horizontal overlay */}
-              <div className="md:col-span-8 h-[380px] rounded-lg overflow-hidden relative group shadow-sm hover:shadow-lg transition-all duration-300">
+              <div className="md:col-span-8 h-95 rounded-lg overflow-hidden relative group shadow-sm hover:shadow-lg transition-all duration-300">
                 {chunk[0].image && (
                   <div className="absolute inset-0 z-0">
                     <img

@@ -4,8 +4,43 @@ import { DonationForm } from "@/components/DonationForm";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 
 export default function DonatePage() {
+  const donationImpacts = [
+    {
+      title: "Daily Prayers",
+      desc: "Your help brings us the holy Mangal Arati and daily worship so we can pray together every day.",
+      bgColor: "bg-tertiary/10",
+      borderColor: "border-tertiary/30",
+      icon: "spa",
+      iconColor: "text-tertiary"
+    },
+    {
+      title: "Festival Celebrations",
+      desc: "You make big celebrations like Durga, Kali Puja etc. possible, bringing everyone together in joy.",
+      bgColor: "bg-secondary/10",
+      borderColor: "border-secondary/30",
+      icon: "celebration",
+      iconColor: "text-secondary"
+    },
+    {
+      title: "Construction & Maintenance",
+      desc: "Mandir Complex, including the historic temple, Offices and addition of future facilities.",
+      bgColor: "bg-primary/5",
+      borderColor: "border-primary/20",
+      icon: "home_repair_service",
+      iconColor: "text-primary"
+    },
+    {
+      title: "Social Welfare",
+      desc: "Empower our HealthCamps and Daily Bhog Sewa to feed the hungry and bring healing to those in need.",
+      bgColor: "bg-surface-container",
+      borderColor: "border-outline-variant/50",
+      icon: "volunteer_activism",
+      iconColor: "text-primary"
+    }
+  ];
+
   return (
-    <div className="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24 space-y-16 animate-in fade-in duration-300">
+    <div className="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24 space-y-20 animate-in fade-in duration-300">
       
       {/* 1. Page Header */}
       <section className="text-center max-w-2xl mx-auto space-y-4">
@@ -16,7 +51,38 @@ export default function DonatePage() {
         />
       </section>
 
-      {/* 2. Main Two-Column Payment & Form Grid */}
+      {/* 2. How Your Donation Helps Section */}
+      <section className="space-y-10 max-w-5xl mx-auto">
+        <div className="text-center space-y-2">
+          <h2 className="font-display text-2xl font-bold text-primary">How Your Donation Helps</h2>
+          <p className="font-sans text-base text-on-surface-variant max-w-xl mx-auto">
+            Every contribution directly funds the upkeep of the Kali Bari and supports our community development initiatives.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {donationImpacts.map((impact) => (
+            <div
+              key={impact.title}
+              className={`p-8 rounded-lg border ${impact.bgColor} ${impact.borderColor} flex gap-5 shadow-sm hover:shadow-md transition-shadow duration-300`}
+            >
+              <span className={`material-symbols-outlined text-[40px] ${impact.iconColor} shrink-0`} style={{ fontVariationSettings: '"FILL" 1' }}>
+                {impact.icon}
+              </span>
+              <div className="space-y-2">
+                <h3 className="font-display text-lg md:text-xl font-bold text-on-surface">
+                  {impact.title}
+                </h3>
+                <p className="font-sans text-base text-on-surface-variant leading-relaxed">
+                  {impact.desc}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* 3. Main Two-Column Payment & Form Grid */}
       <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         
         {/* Left Column: Ways to Donate */}

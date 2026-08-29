@@ -57,8 +57,8 @@ export const TopNavBar: React.FC = () => {
           <span>{siteContent.brand.name}</span>
         </Link>
 
-        {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center gap-8">
+        {/* Desktop Navigation (Switches to mobile at xl breakpoint to handle 9 links beautifully) */}
+        <div className="hidden xl:flex items-center gap-8">
           <ul className="flex items-center gap-8">
             {navLinks.map((link) => {
               if (link.hasDropdown) {
@@ -132,7 +132,7 @@ export const TopNavBar: React.FC = () => {
         <button
           aria-label="Toggle Menu"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="lg:hidden text-primary flex items-center justify-center p-1"
+          className="xl:hidden text-primary flex items-center justify-center p-1"
         >
           <span className="material-symbols-outlined text-[30px]">
             {mobileMenuOpen ? "close" : "menu"}
@@ -140,9 +140,9 @@ export const TopNavBar: React.FC = () => {
         </button>
       </div>
 
-      {/* Mobile Drawer Overlay */}
+      {/* Mobile Drawer Overlay (Rendered as vertical list) */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-x-0 top-[64px] bottom-0 w-full bg-surface border-t border-outline-variant z-40 overflow-y-auto px-margin-mobile py-8 flex flex-col justify-between shadow-2xl animate-in slide-in-from-top duration-300">
+        <div className="xl:hidden fixed inset-x-0 top-[64px] bottom-0 w-full bg-surface border-t border-outline-variant z-40 overflow-y-auto px-margin-mobile py-8 flex flex-col justify-between shadow-2xl animate-in slide-in-from-top duration-300">
           <ul className="flex flex-col gap-6">
             {navLinks.map((link) => {
               if (link.hasDropdown) {
