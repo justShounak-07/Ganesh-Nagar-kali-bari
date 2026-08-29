@@ -50,10 +50,15 @@ export const TopNavBar: React.FC = () => {
     <nav className="sticky top-0 z-50 w-full border-b border-outline-variant bg-surface/95 backdrop-blur-md transition-all duration-300">
       <div className="mx-auto flex max-w-container-max items-center justify-between px-margin-mobile py-4.5 md:px-margin-desktop">
         {/* Brand Logo */}
-        <Link href="/" className="flex items-center gap-2 font-display text-xl font-bold text-primary transition-colors hover:text-secondary">
-          <span className="material-symbols-outlined fill-1 text-[26px]" style={{ fontVariationSettings: '"FILL" 1' }}>
-            temple_hindu
-          </span>
+        <Link
+          href="/"
+          className="flex items-center gap-2 font-display text-xl font-bold text-primary transition-colors hover:text-secondary"
+        >
+          <img
+            src="/assets/KaliBari-logo.png"
+            alt="Kali Bari Logo"
+            className="h-9 w-9 object-contain rounded-full"
+          />
           <span>{siteContent.brand.name}</span>
         </Link>
 
@@ -62,10 +67,16 @@ export const TopNavBar: React.FC = () => {
           <ul className="flex items-center gap-8">
             {navLinks.map((link) => {
               if (link.hasDropdown) {
-                const isSubActive = link.subsections?.some((sub) => pathname === sub.path);
+                const isSubActive = link.subsections?.some(
+                  (sub) => pathname === sub.path,
+                );
                 const isAbout = link.dropdownKey === "about";
-                const isOpen = isAbout ? aboutDropdownOpen : servicesDropdownOpen;
-                const setIsOpen = isAbout ? setAboutDropdownOpen : setServicesDropdownOpen;
+                const isOpen = isAbout
+                  ? aboutDropdownOpen
+                  : servicesDropdownOpen;
+                const setIsOpen = isAbout
+                  ? setAboutDropdownOpen
+                  : setServicesDropdownOpen;
 
                 return (
                   <li
@@ -76,11 +87,15 @@ export const TopNavBar: React.FC = () => {
                   >
                     <button
                       className={`flex items-center gap-1 font-sans text-sm font-semibold uppercase tracking-wider transition-colors duration-300 cursor-pointer py-1.5 ${
-                        isSubActive ? "text-primary border-b-2 border-primary" : "text-on-surface-variant hover:text-primary"
+                        isSubActive
+                          ? "text-primary border-b-2 border-primary"
+                          : "text-on-surface-variant hover:text-primary"
                       }`}
                     >
                       {link.name}
-                      <span className="material-symbols-outlined text-[18px]">keyboard_arrow_down</span>
+                      <span className="material-symbols-outlined text-[18px]">
+                        keyboard_arrow_down
+                      </span>
                     </button>
 
                     {/* Dropdown Panel */}
@@ -111,7 +126,9 @@ export const TopNavBar: React.FC = () => {
                   <Link
                     href={link.path}
                     className={`font-sans text-sm font-semibold uppercase tracking-wider transition-colors duration-300 pb-1.5 ${
-                      isActive ? "text-primary border-b-2 border-primary" : "text-on-surface-variant hover:text-primary"
+                      isActive
+                        ? "text-primary border-b-2 border-primary"
+                        : "text-on-surface-variant hover:text-primary"
                     }`}
                   >
                     {link.name}
@@ -140,19 +157,28 @@ export const TopNavBar: React.FC = () => {
         </button>
       </div>
 
-      {/* Mobile Drawer Overlay (Rendered as vertical list) */}
+      {/* Mobile Drawer Overlay (as vertical list) */}
       {mobileMenuOpen && (
         <div className="xl:hidden fixed inset-x-0 top-[64px] bottom-0 w-full bg-surface border-t border-outline-variant z-40 overflow-y-auto px-margin-mobile py-8 flex flex-col justify-between shadow-2xl animate-in slide-in-from-top duration-300">
           <ul className="flex flex-col gap-6">
             {navLinks.map((link) => {
               if (link.hasDropdown) {
-                const isSubActive = link.subsections?.some((sub) => pathname === sub.path);
+                const isSubActive = link.subsections?.some(
+                  (sub) => pathname === sub.path,
+                );
                 const isAbout = link.dropdownKey === "about";
-                const isOpen = isAbout ? aboutDropdownOpen : servicesDropdownOpen;
-                const setIsOpen = isAbout ? setAboutDropdownOpen : setServicesDropdownOpen;
+                const isOpen = isAbout
+                  ? aboutDropdownOpen
+                  : servicesDropdownOpen;
+                const setIsOpen = isAbout
+                  ? setAboutDropdownOpen
+                  : setServicesDropdownOpen;
 
                 return (
-                  <li key={link.name} className="border-b border-outline-variant/30 pb-4">
+                  <li
+                    key={link.name}
+                    className="border-b border-outline-variant/30 pb-4"
+                  >
                     <button
                       onClick={() => setIsOpen(!isOpen)}
                       className={`flex w-full items-center justify-between font-sans text-sm font-semibold uppercase tracking-wider text-left ${
@@ -160,20 +186,26 @@ export const TopNavBar: React.FC = () => {
                       }`}
                     >
                       <span>{link.name}</span>
-                      <span className={`material-symbols-outlined transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}>
+                      <span
+                        className={`material-symbols-outlined transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
+                      >
                         keyboard_arrow_down
                       </span>
                     </button>
 
                     {/* Mobile Dropdown Subsections */}
-                    <div className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-40 mt-3 pl-4" : "max-h-0"}`}>
+                    <div
+                      className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-40 mt-3 pl-4" : "max-h-0"}`}
+                    >
                       <ul className="flex flex-col gap-4">
                         {link.subsections?.map((sub) => (
                           <li key={sub.name}>
                             <Link
                               href={sub.path}
                               className={`block font-sans text-xs font-semibold uppercase tracking-wider ${
-                                pathname === sub.path ? "text-primary" : "text-on-surface-variant"
+                                pathname === sub.path
+                                  ? "text-primary"
+                                  : "text-on-surface-variant"
                               }`}
                             >
                               {sub.name}
@@ -188,7 +220,10 @@ export const TopNavBar: React.FC = () => {
 
               const isActive = pathname === link.path;
               return (
-                <li key={link.name} className="border-b border-outline-variant/30 pb-4">
+                <li
+                  key={link.name}
+                  className="border-b border-outline-variant/30 pb-4"
+                >
                   <Link
                     href={link.path}
                     className={`block font-sans text-sm font-semibold uppercase tracking-wider ${

@@ -20,12 +20,6 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-95"></div>
         </div>
         <div className="relative z-10 max-w-4xl mx-auto space-y-6">
-          <span
-            className="material-symbols-outlined text-surface-card/85 text-[64px] drop-shadow-sm animate-pulse"
-            style={{ fontVariationSettings: '"FILL" 1' }}
-          >
-            self_improvement
-          </span>
           <h1 className="font-display text-4xl md:text-6xl font-bold text-white drop-shadow-lg leading-tight">
             "May Maa Kali bless our community with strength, peace and
             prosperity."
@@ -78,10 +72,10 @@ export default function HomePage() {
           <div className="relative group">
             <div className="absolute inset-0 bg-secondary/10 translate-x-4 translate-y-4 rounded-lg -z-10 transition-transform duration-500 group-hover:translate-x-6 group-hover:translate-y-6"></div>
             <img
-              className="w-full aspect-3/5 object-cover rounded-lg border border-outline-variant/30 shadow-sm"
+              className="w-full aspect-4/5 object-cover rounded-lg border border-outline-variant/30 shadow-sm"
               alt="Maa Kali"
               // MAA KALI IMAGE IN HERO
-              src="/assets/maa.jpeg"
+              src="/assets/MAA.png"
             />
           </div>
           {/* --HISTORY SECTION-- */}
