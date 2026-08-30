@@ -33,8 +33,8 @@ export default function ManagementPage() {
             </thead>
             <tbody className="font-sans text-base text-on-surface-variant divide-y divide-outline-variant/20">
               {siteContent.management.committee.map((member) => (
-                <tr 
-                  key={member.position} 
+                <tr
+                  key={member.position}
                   className="hover:bg-surface-container-low transition-colors duration-200"
                 >
                   <td className="py-4 px-6 font-semibold text-primary text-base">
@@ -45,8 +45,8 @@ export default function ManagementPage() {
                   </td>
                   <td className="py-4 px-6 text-sm font-medium">
                     {member.contact ? (
-                      <a 
-                        href={`tel:${member.contact}`} 
+                      <a
+                        href={`tel:${member.contact}`}
                         className="hover:text-secondary hover:underline transition-colors"
                       >
                         {member.contact}

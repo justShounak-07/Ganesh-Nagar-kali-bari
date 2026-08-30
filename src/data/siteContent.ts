@@ -42,7 +42,8 @@ export const siteContent = {
     phone: "+91 9015119547",
     email: "info@ganeshnagarkalibari.org",
     address: "D-158-A,Ganesh Nagar Pandav Nagar complex Delhi-110092",
-    directionsUrl: "https://maps.google.com/?q=Ganesh+Nagar+Kali+Bari",
+    directionsUrl:
+      "https://www.google.com/maps/dir/28.6190808,77.2830489/Ganesh+nagar+pandav+nagar,+E+block,+Ganesh+Nagar,+J78J%2BWX3,+Block+S,+Pandav+Nagar,Shivangi+House+no+E+-137+street+5,+92,+N+Pandav+Nagar,+near+Akshardham+Road,+Delhi,+New+Delhi,+Delhi+110092/@28.6202547,77.282024,20.44z/data=!4m10!4m9!1m1!4e1!1m5!1m1!1s0x390ce30006a28d37:0xe0cfe85c7760777d!2m2!1d77.282057!2d28.6203429!3e2?entry=ttu&g_ep=EgoyMDI2MDgyNi4wIKXMDSoASAFQAw%3D%3D",
     metro: "Akshardham Metro Station (5 min walk)",
     bus: "Ganesh Nagar Bus Stand (2 min walk)",
     landmark: "Near Hanuman Mandir",
@@ -68,43 +69,49 @@ export const siteContent = {
         year: "1978",
         title: "Kali Bari Established",
         desc: "Foundational shrine constructed on donated land by the Ganesh Nagar local community.",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuAw1VFUORIpykp840YbbfQi7ztHoOK7Pgf2LTYi9uBmM60dYT1LKE7HYdlpZjDKVvEiFMmvA694X8qBq-lixlUnboKXbSC2zUPoppu8gAwICmlmZ_XLmlcH--7Fi23HYXJ1BRabJvKEPtdEhydVn0S2BBWyCld6KmvNMw12-FlDHJZ8EvrjF0NsN7b-QfJ-SIZ9bZSMjBS-UkNZS6EDjgvNLZawq_9QK_RKvCimWui6dL4ReAw6ox8c",
+        image: "",
       },
       {
-        year: "1985",
+        year: "1980",
+        title: "First Maha Shivaratri",
+        desc: "First MahaShivratri Happened",
+        image: "",
+      },
+      {
+        year: "1988",
         title: "First Durga Puja",
         desc: "First community-wide Sharadotsav celebrated with marquee decorations.",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuAw1VFUORIpykp840YbbfQi7ztHoOK7Pgf2LTYi9uBmM60dYT1LKE7HYdlpZjDKVvEiFMmvA694X8qBq-lixlUnboKXbSC2zUPoppu8gAwICmlmZ_XLmlcH--7Fi23HYXJ1BRabJvKEPtdEhydVn0S2BBWyCld6KmvNMw12-FlDHJZ8EvrjF0NsN7b-QfJ-SIZ9bZSMjBS-UkNZS6EDjgvNLZawq_9QK_RKvCimWui6dL4ReAw6ox8c",
+        image: "",
+      },
+      {
+        year: "1990",
+        title: "First Jagadhatri Puja",
+        desc: "First community-wide Jagadhatri Puja celebrated with celebrations.",
+        image: "",
+      },
+      {
+        year: "1995",
+        title: "First Basanti Puja",
+        desc: "First community-wide Basanti Puja celebrated with celebrations.",
+        image: "",
       },
       {
         year: "1998",
-        title: "Main Shrine Expansion",
-        desc: "Constructed the stone sanctum for Maa Kali and improved security.",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuAw1VFUORIpykp840YbbfQi7ztHoOK7Pgf2LTYi9uBmM60dYT1LKE7HYdlpZjDKVvEiFMmvA694X8qBq-lixlUnboKXbSC2zUPoppu8gAwICmlmZ_XLmlcH--7Fi23HYXJ1BRabJvKEPtdEhydVn0S2BBWyCld6KmvNMw12-FlDHJZ8EvrjF0NsN7b-QfJ-SIZ9bZSMjBS-UkNZS6EDjgvNLZawq_9QK_RKvCimWui6dL4ReAw6ox8c",
+        title: "First Sarawati Puja",
+        desc: "First community-wide Saraswati Puja celebrated with celebrations.",
+        image: "",
       },
       {
-        year: "2010",
-        title: "Community Hall Inauguration",
-        desc: "Opened community and assembly space to host social events and classes.",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuAw1VFUORIpykp840YbbfQi7ztHoOK7Pgf2LTYi9uBmM60dYT1LKE7HYdlpZjDKVvEiFMmvA694X8qBq-lixlUnboKXbSC2zUPoppu8gAwICmlmZ_XLmlcH--7Fi23HYXJ1BRabJvKEPtdEhydVn0S2BBWyCld6KmvNMw12-FlDHJZ8EvrjF0NsN7b-QfJ-SIZ9bZSMjBS-UkNZS6EDjgvNLZawq_9QK_RKvCimWui6dL4ReAw6ox8c",
+        year: "2003",
+        title: "Silver Jubliee",
+        desc: " Grand Celebration for 25 years of Ganesh nagar Kali Bari Establishment.  ",
+        image: "",
       },
       {
-        year: "2020",
-        title: "Digital Preservation Initiative",
-        desc: "Created public records, virtual archives, and digitised administrative systems.",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuAw1VFUORIpykp840YbbfQi7ztHoOK7Pgf2LTYi9uBmM60dYT1LKE7HYdlpZjDKVvEiFMmvA694X8qBq-lixlUnboKXbSC2zUPoppu8gAwICmlmZ_XLmlcH--7Fi23HYXJ1BRabJvKEPtdEhydVn0S2BBWyCld6KmvNMw12-FlDHJZ8EvrjF0NsN7b-QfJ-SIZ9bZSMjBS-UkNZS6EDjgvNLZawq_9QK_RKvCimWui6dL4ReAw6ox8c",
-      },
-      {
-        year: "2026",
-        title: "This Website Is Published",
-        desc: "Created Website for Kali Mandir",
-        image:
-          "https://lh3.googleusercontent.com/aida-public/AB6AXuAw1VFUORIpykp840YbbfQi7ztHoOK7Pgf2LTYi9uBmM60dYT1LKE7HYdlpZjDKVvEiFMmvA694X8qBq-lixlUnboKXbSC2zUPoppu8gAwICmlmZ_XLmlcH--7Fi23HYXJ1BRabJvKEPtdEhydVn0S2BBWyCld6KmvNMw12-FlDHJZ8EvrjF0NsN7b-QfJ-SIZ9bZSMjBS-UkNZS6EDjgvNLZawq_9QK_RKvCimWui6dL4ReAw6ox8c",
+        year: "2014",
+        title: "Main Mandir Expansion",
+        desc: "Constructed the stone sanctum for Mandir with Multiple Floors and Ease of Services for Devotees. ",
+        image: "",
       },
     ] as Milestone[],
   },
@@ -141,15 +148,13 @@ export const siteContent = {
       name: "Kali Puja ",
       description:
         "Our premier annual festival, invoking the divine mother Kali on the new moon night of Kartik. A night of profound devotion, luminous offerings, and community unity.",
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuDx0xmUrkBzBEJMnzB8LTkOsXrWQsyVD8aofcYyuMnZni7E_-Zy8hfslOHGSRnwiO51rpAIZmord-zbWhEuK3Ay-VO3FZa-brzWAHfygsU22Z5c2bzlb0JPr54KM34CrPWTDFTFV15IykK6KFI9ExYeZKbHvUYVPHaA-stswrWpPHU0RWGEMk0CynRTpcBIHtirgB1O0KUv24bhWjQr6EU6XzMrKyQTgQoEBF72gz2gbfiOoCu2b36q",
+      image: "/assets/idols/mk-2.jpeg",
     },
     {
       name: "Durga Puja",
       description:
         "The autumnal celebration of the Mother Goddess's victory over evil. Five days of intricate artistry, rhythmic dhaak beats, and joyous cultural gatherings.",
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuBkwCP06ZHnNT44txiEbWIzzut-axS_vGHIOu2eeF80VP4Hh0yzbrr2uTXXt4V4_FPqDHDGgvK2Bf52zALCNLCXDvKbRF8fdmUShrzFtJvl2AXHN6MM82bX2TlDxhfDONgkVHoqcIe-3IGHJfcORKqIJ8mmwfocIAkPPj5DywwouFjkCXptX-_cpV2CLyxic9ngTMLIyHVVoOzdr_VZVL7HhrRIOuqxo9jZM47E0afwIoRtSykPh660",
+      image: "/assets/idols/md-1.jpg",
     },
     {
       name: "Saraswati Puja",
@@ -204,8 +209,7 @@ export const siteContent = {
       name: "Neel Shasthi",
       description:
         "Prayers offered to Lord Shiva for the health and longevity of children. Devotees light lamps near the Shiva Lingam in the evening.",
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuAw1VFUORIpykp840YbbfQi7ztHoOK7Pgf2LTYi9uBmM60dYT1LKE7HYdlpZjDKVvEiFMmvA694X8qBq-lixlUnboKXbSC2zUPoppu8gAwICmlmZ_XLmlcH--7Fi23HYXJ1BRabJvKEPtdEhydVn0S2BBWyCld6KmvNMw12-FlDHJZ8EvrjF0NsN7b-QfJ-SIZ9bZSMjBS-UkNZS6EDjgvNLZawq_9QK_RKvCimWui6dL4ReAw6ox8c",
+      image: "",
     },
   ] as FestivalItem[],
 
@@ -344,24 +348,21 @@ export const siteContent = {
       date: "09 May",
       description:
         "Celebrating the birth anniversary of Gurudev Rabindranath Tagore with devotional songs, recitations, and Rabindra Nritya performances by students.",
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuBkwCP06ZHnNT44txiEbWIzzut-axS_vGHIOu2eeF80VP4Hh0yzbrr2uTXXt4V4_FPqDHDGgvK2Bf52zALCNLCXDvKbRF8fdmUShrzFtJvl2AXHN6MM82bX2TlDxhfDONgkVHoqcIe-3IGHJfcORKqIJ8mmwfocIAkPPj5DywwouFjkCXptX-_cpV2CLyxic9ngTMLIyHVVoOzdr_VZVL7HhrRIOuqxo9jZM47E0afwIoRtSykPh660",
+      image: "/assets/gallery/rabin.jpg",
     },
     {
       title: "Independence Day",
       date: "15 August",
       description:
         "National flag hoisting in the temple compound, followed by patriotic songs and a short history assembly by the youth committee.",
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuBkwCP06ZHnNT44txiEbWIzzut-axS_vGHIOu2eeF80VP4Hh0yzbrr2uTXXt4V4_FPqDHDGgvK2Bf52zALCNLCXDvKbRF8fdmUShrzFtJvl2AXHN6MM82bX2TlDxhfDONgkVHoqcIe-3IGHJfcORKqIJ8mmwfocIAkPPj5DywwouFjkCXptX-_cpV2CLyxic9ngTMLIyHVVoOzdr_VZVL7HhrRIOuqxo9jZM47E0afwIoRtSykPh660",
+      image: "/assets/gallery/ind2.jpg",
     },
     {
       title: "Republic Day",
       date: "26 January",
       description:
         "Morning flag hoisting ceremony and a patriotic parade representation by children, ending with sweet distribution.",
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuBkwCP06ZHnNT44txiEbWIzzut-axS_vGHIOu2eeF80VP4Hh0yzbrr2uTXXt4V4_FPqDHDGgvK2Bf52zALCNLCXDvKbRF8fdmUShrzFtJvl2AXHN6MM82bX2TlDxhfDONgkVHoqcIe-3IGHJfcORKqIJ8mmwfocIAkPPj5DywwouFjkCXptX-_cpV2CLyxic9ngTMLIyHVVoOzdr_VZVL7HhrRIOuqxo9jZM47E0afwIoRtSykPh660",
+      image: "/assets/gallery/ind.jpg",
     },
     {
       title: "BIJOY Sammilani",
@@ -376,16 +377,14 @@ export const siteContent = {
       date: "Various Dates",
       description:
         "Sit-and-draw competitions for different age groups organized in the community hall during major festivals.",
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuBkwCP06ZHnNT44txiEbWIzzut-axS_vGHIOu2eeF80VP4Hh0yzbrr2uTXXt4V4_FPqDHDGgvK2Bf52zALCNLCXDvKbRF8fdmUShrzFtJvl2AXHN6MM82bX2TlDxhfDONgkVHoqcIe-3IGHJfcORKqIJ8mmwfocIAkPPj5DywwouFjkCXptX-_cpV2CLyxic9ngTMLIyHVVoOzdr_VZVL7HhrRIOuqxo9jZM47E0afwIoRtSykPh660",
+      image: "/assets/gallery/draw.jpg",
     },
     {
       title: "Classical Dance & Music Performances",
       date: "Festival Evenings",
       description:
         "Evening concerts showcasing vocal classical renditions, sitar compositions, and Kathak/Bharatnatyam dance recitals.",
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuBkwCP06ZHnNT44txiEbWIzzut-axS_vGHIOu2eeF80VP4Hh0yzbrr2uTXXt4V4_FPqDHDGgvK2Bf52zALCNLCXDvKbRF8fdmUShrzFtJvl2AXHN6MM82bX2TlDxhfDONgkVHoqcIe-3IGHJfcORKqIJ8mmwfocIAkPPj5DywwouFjkCXptX-_cpV2CLyxic9ngTMLIyHVVoOzdr_VZVL7HhrRIOuqxo9jZM47E0afwIoRtSykPh660",
+      image: "/assets/gallery/cd2.jpg",
     },
   ],
 };

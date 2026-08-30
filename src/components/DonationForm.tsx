@@ -16,10 +16,16 @@ export const DonationForm: React.FC = () => {
   });
 
   const [botcheck, setBotcheck] = useState("");
-  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [status, setStatus] = useState<
+    "idle" | "submitting" | "success" | "error"
+  >("idle");
   const [errorMessage, setErrorMessage] = useState("");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -65,12 +71,17 @@ export const DonationForm: React.FC = () => {
         setStatus("success");
       } else {
         setStatus("error");
-        setErrorMessage(result.message || "Something went wrong. Please check your inputs and try again.");
+        setErrorMessage(
+          result.message ||
+            "Something went wrong. Please check your inputs and try again.",
+        );
       }
     } catch (err) {
       console.error("Submission error:", err);
       setStatus("error");
-      setErrorMessage("Could not reach the submission server. Please verify your network connection.");
+      setErrorMessage(
+        "Could not reach the submission server. Please verify your network connection.",
+      );
     }
   };
 
@@ -80,9 +91,15 @@ export const DonationForm: React.FC = () => {
         <span className="material-symbols-outlined text-[64px] text-secondary">
           check_circle
         </span>
-        <h3 className="font-display text-2xl font-bold text-primary">Receipt Request Submitted</h3>
+        <h3 className="font-display text-2xl font-bold text-primary">
+          Receipt Request Submitted
+        </h3>
         <p className="font-sans text-base md:text-lg text-on-surface-variant max-w-md mx-auto leading-relaxed">
-          Thank you, <strong>{formData.name}</strong>. Your request for a donation receipt of <strong>₹{formData.amount}</strong> has been successfully dispatched. We will verify transaction ID <code>{formData.transactionId}</code> against our bank records and email you the receipt.
+          Thank you, <strong>{formData.name}</strong>. Your request for a
+          donation receipt of <strong>₹{formData.amount}</strong> has been
+          successfully dispatched. We will verify transaction ID{" "}
+          <code>{formData.transactionId}</code> against our bank records and
+          email you the receipt.
         </p>
         <button
           onClick={() => {
@@ -126,8 +143,12 @@ export const DonationForm: React.FC = () => {
           <div className="bg-error/10 border-l-4 border-error p-4 rounded-r-md text-left flex items-start gap-3">
             <span className="material-symbols-outlined text-error">error</span>
             <div>
-              <p className="font-sans text-xs font-bold text-error uppercase tracking-wider">Submission Error</p>
-              <p className="font-sans text-sm text-on-surface-variant mt-1">{errorMessage}</p>
+              <p className="font-sans text-xs font-bold text-error uppercase tracking-wider">
+                Submission Error
+              </p>
+              <p className="font-sans text-sm text-on-surface-variant mt-1">
+                {errorMessage}
+              </p>
             </div>
           </div>
         )}
@@ -135,7 +156,10 @@ export const DonationForm: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Full Name */}
           <div className="flex flex-col space-y-1.5">
-            <label htmlFor="name" className="font-sans text-sm font-semibold text-on-surface-variant">
+            <label
+              htmlFor="name"
+              className="font-sans text-sm font-semibold text-on-surface-variant"
+            >
               Full Name *
             </label>
             <input
@@ -146,13 +170,16 @@ export const DonationForm: React.FC = () => {
               onChange={handleChange}
               required
               className="w-full px-4 py-2.5 border border-outline rounded-default bg-surface hover:border-primary focus:border-primary focus:outline-none transition-colors text-base"
-              placeholder="E.g. Shounak Sen"
+              placeholder="E.g. Ram Kumar, Radha Verma"
             />
           </div>
 
           {/* Mobile Number */}
           <div className="flex flex-col space-y-1.5">
-            <label htmlFor="phone" className="font-sans text-sm font-semibold text-on-surface-variant">
+            <label
+              htmlFor="phone"
+              className="font-sans text-sm font-semibold text-on-surface-variant"
+            >
               Phone Number *
             </label>
             <input
@@ -169,7 +196,10 @@ export const DonationForm: React.FC = () => {
 
           {/* Email Address */}
           <div className="flex flex-col space-y-1.5">
-            <label htmlFor="email" className="font-sans text-sm font-semibold text-on-surface-variant">
+            <label
+              htmlFor="email"
+              className="font-sans text-sm font-semibold text-on-surface-variant"
+            >
               Email Address *
             </label>
             <input
@@ -180,14 +210,17 @@ export const DonationForm: React.FC = () => {
               onChange={handleChange}
               required
               className="w-full px-4 py-2.5 border border-outline rounded-default bg-surface hover:border-primary focus:border-primary focus:outline-none transition-colors text-base"
-              placeholder="E.g. helper@example.com"
+              placeholder="E.g. name@gmail.com"
             />
           </div>
 
           {/* Donation Amount */}
           <div className="flex flex-col space-y-1.5">
-            <label htmlFor="amount" className="font-sans text-sm font-semibold text-on-surface-variant">
-              Donation Amount (INR) *
+            <label
+              htmlFor="amount"
+              className="font-sans text-sm font-semibold text-on-surface-variant"
+            >
+              Donation Amount (in INR) *
             </label>
             <input
               type="number"
@@ -204,7 +237,10 @@ export const DonationForm: React.FC = () => {
 
           {/* Date of Transfer */}
           <div className="flex flex-col space-y-1.5">
-            <label htmlFor="date" className="font-sans text-sm font-semibold text-on-surface-variant">
+            <label
+              htmlFor="date"
+              className="font-sans text-sm font-semibold text-on-surface-variant"
+            >
               Date of Transfer *
             </label>
             <input
@@ -220,7 +256,10 @@ export const DonationForm: React.FC = () => {
 
           {/* Transaction / Reference ID */}
           <div className="flex flex-col space-y-1.5">
-            <label htmlFor="transactionId" className="font-sans text-sm font-semibold text-on-surface-variant">
+            <label
+              htmlFor="transactionId"
+              className="font-sans text-sm font-semibold text-on-surface-variant"
+            >
               Transaction / Reference ID *
             </label>
             <input
@@ -231,13 +270,16 @@ export const DonationForm: React.FC = () => {
               onChange={handleChange}
               required
               className="w-full px-4 py-2.5 border border-outline rounded-default bg-surface hover:border-primary focus:border-primary focus:outline-none transition-colors text-base"
-              placeholder="UPI Ref No. or Bank Txn ID"
+              placeholder="UPI Ref No. or Transaction ID"
             />
           </div>
 
           {/* Payment Method */}
           <div className="flex flex-col space-y-1.5 md:col-span-2">
-            <label htmlFor="paymentMethod" className="font-sans text-sm font-semibold text-on-surface-variant">
+            <label
+              htmlFor="paymentMethod"
+              className="font-sans text-sm font-semibold text-on-surface-variant"
+            >
               Payment Method *
             </label>
             <select
@@ -249,7 +291,9 @@ export const DonationForm: React.FC = () => {
               className="w-full px-4 py-2.5 border border-outline rounded-default bg-surface hover:border-primary focus:border-primary focus:outline-none transition-colors text-base"
             >
               <option value="UPI">UPI (Google Pay / PhonePe / Paytm)</option>
-              <option value="Bank Transfer">Bank Transfer (IMPS / NEFT / RTGS)</option>
+              <option value="Bank Transfer">
+                Bank Transfer (IMPS / NEFT / RTGS)
+              </option>
               <option value="Cheque">Cheque</option>
               <option value="Cash">Cash (Handed to Office Bearer)</option>
             </select>
@@ -257,7 +301,10 @@ export const DonationForm: React.FC = () => {
 
           {/* Message / Purpose */}
           <div className="flex flex-col space-y-1.5 md:col-span-2">
-            <label htmlFor="message" className="font-sans text-sm font-semibold text-on-surface-variant">
+            <label
+              htmlFor="message"
+              className="font-sans text-sm font-semibold text-on-surface-variant"
+            >
               Message / Purpose (Optional)
             </label>
             <textarea
@@ -278,7 +325,9 @@ export const DonationForm: React.FC = () => {
             disabled={status === "submitting"}
             className="w-full bg-primary text-on-primary py-3.5 rounded-default font-sans text-sm font-semibold uppercase tracking-wider hover:bg-primary-container disabled:bg-primary/50 transition-colors shadow-md active:scale-98"
           >
-            {status === "submitting" ? "Submitting Request..." : "Submit Receipt Request"}
+            {status === "submitting"
+              ? "Submitting Request..."
+              : "Submit Receipt Request"}
           </button>
         </div>
       </form>
