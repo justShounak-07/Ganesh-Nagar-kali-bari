@@ -4,107 +4,148 @@ import React from "react";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 
 interface GalleryItem {
-  title: string;
   image: string;
-  category: string;
 }
 
 export default function GalleryPage() {
-  const [selectedImageIndex, setSelectedImageIndex] = React.useState<number | null>(null);
+  const [selectedImageIndex, setSelectedImageIndex] = React.useState<
+    number | null
+  >(null);
 
   const galleryItems: GalleryItem[] = [
     {
-      title: "Durga Puja Celebrations",
-      category: "Festivals",
       image: "/assets/gallery/puja-1.jpg",
     },
     {
-      title: "",
-      category: "Architecture",
       image: "/assets/gallery/puja.jpg",
     },
     {
-      title: "Evening Sandhya Aarti",
-      category: "Rituals",
       image: "/assets/gallery/rang.jpg",
     },
     {
-      title: "Community Anandamela",
-      category: "Community",
       image: "/assets/gallery/nsp.jpg",
     },
     {
-      title: "Traditional Alpana",
-      category: "Art",
       image: "/assets/gallery/ind2.jpg",
     },
     {
-      title: "Mandir Architecture",
-      category: "Architecture",
       image: "/assets/gallery/draw.jpg",
     },
     {
-      title: "Mandir Architecture",
-      category: "Architecture",
       image: "/assets/gallery/cs.jpg",
     },
     {
-      title: "Mandir Architecture",
-      category: "Architecture",
       image: "/assets/gallery/cs-1.jpg",
     },
     {
-      title: "Mandir Architecture",
-      category: "Architecture",
       image: "/assets/gallery/com.jpg",
     },
     {
-      title: "Mandir Architecture",
-      category: "Architecture",
       image: "/assets/gallery/com-1.jpg",
     },
     {
-      title: "Mandir Architecture",
-      category: "Architecture",
       image: "/assets/gallery/cd.jpg",
     },
     {
-      title: "Mandir Architecture",
-      category: "Architecture",
       image: "/assets/gallery/cd-3.jpg",
     },
     {
-      title: "Mandir Architecture",
-      category: "Architecture",
       image: "/assets/gallery/cd-4.jpg",
     },
     {
-      title: "Mandir Architecture",
-      category: "Architecture",
       image: "/assets/gallery/cd2.jpg",
+    },
+    {
+      image: "/assets/gallery/anna.jpg",
+    },
+    {
+      image: "/assets/gallery/basanti.jpg",
+    },
+    {
+      image: "/assets/gallery/bs-2.jpg",
+    },
+    {
+      image: "/assets/gallery/dg.jpg",
+    },
+    {
+      image: "/assets/gallery/kali-3.jpg",
+    },
+    {
+      image: "/assets/gallery/kali-4.jpg",
+    },
+    {
+      image: "/assets/gallery/lx.jpg",
+    },
+    {
+      image: "/assets/gallery/saraswati.jpg",
+    },
+    {
+      image: "/assets/gallery/shiva.jpg",
     },
   ];
 
   const getGridClasses = (index: number) => {
     const patterns = [
       // Pattern 1: Index 0-3 (takes 12 columns total, height 450px)
-      { className: "md:col-span-6 md:row-span-2 md:h-[450px]", aspect: "aspect-[4/3] md:aspect-auto" },
-      { className: "md:col-span-6 md:row-span-1 md:h-[213px]", aspect: "aspect-[4/3] md:aspect-auto" },
-      { className: "md:col-span-3 md:row-span-1 md:h-[213px]", aspect: "aspect-[4/3] md:aspect-auto" },
-      { className: "md:col-span-3 md:row-span-1 md:h-[213px]", aspect: "aspect-[4/3] md:aspect-auto" },
+      {
+        className: "md:col-span-6 md:row-span-2 md:h-[450px]",
+        aspect: "aspect-[4/3] md:aspect-auto",
+      },
+      {
+        className: "md:col-span-6 md:row-span-1 md:h-[213px]",
+        aspect: "aspect-[4/3] md:aspect-auto",
+      },
+      {
+        className: "md:col-span-3 md:row-span-1 md:h-[213px]",
+        aspect: "aspect-[4/3] md:aspect-auto",
+      },
+      {
+        className: "md:col-span-3 md:row-span-1 md:h-[213px]",
+        aspect: "aspect-[4/3] md:aspect-auto",
+      },
       // Pattern 2: Index 4-7 (takes 12 columns total, height 450px)
-      { className: "md:col-span-4 md:row-span-2 md:h-[450px]", aspect: "aspect-[4/3] md:aspect-auto" },
-      { className: "md:col-span-8 md:row-span-1 md:h-[213px]", aspect: "aspect-[4/3] md:aspect-auto" },
-      { className: "md:col-span-4 md:row-span-1 md:h-[213px]", aspect: "aspect-[4/3] md:aspect-auto" },
-      { className: "md:col-span-4 md:row-span-1 md:h-[213px]", aspect: "aspect-[4/3] md:aspect-auto" },
+      {
+        className: "md:col-span-4 md:row-span-2 md:h-[450px]",
+        aspect: "aspect-[4/3] md:aspect-auto",
+      },
+      {
+        className: "md:col-span-8 md:row-span-1 md:h-[213px]",
+        aspect: "aspect-[4/3] md:aspect-auto",
+      },
+      {
+        className: "md:col-span-4 md:row-span-1 md:h-[213px]",
+        aspect: "aspect-[4/3] md:aspect-auto",
+      },
+      {
+        className: "md:col-span-4 md:row-span-1 md:h-[213px]",
+        aspect: "aspect-[4/3] md:aspect-auto",
+      },
       // Pattern 3: Index 8-11 (takes 12 columns total, height 450px)
-      { className: "md:col-span-6 md:row-span-2 md:h-[450px]", aspect: "aspect-[4/3] md:aspect-auto" },
-      { className: "md:col-span-6 md:row-span-1 md:h-[213px]", aspect: "aspect-[4/3] md:aspect-auto" },
-      { className: "md:col-span-3 md:row-span-1 md:h-[213px]", aspect: "aspect-[4/3] md:aspect-auto" },
-      { className: "md:col-span-3 md:row-span-1 md:h-[213px]", aspect: "aspect-[4/3] md:aspect-auto" },
+      {
+        className: "md:col-span-6 md:row-span-2 md:h-[450px]",
+        aspect: "aspect-[4/3] md:aspect-auto",
+      },
+      {
+        className: "md:col-span-6 md:row-span-1 md:h-[213px]",
+        aspect: "aspect-[4/3] md:aspect-auto",
+      },
+      {
+        className: "md:col-span-3 md:row-span-1 md:h-[213px]",
+        aspect: "aspect-[4/3] md:aspect-auto",
+      },
+      {
+        className: "md:col-span-3 md:row-span-1 md:h-[213px]",
+        aspect: "aspect-[4/3] md:aspect-auto",
+      },
       // Pattern 4: Index 12-13 (takes 12 columns total, height 213px)
-      { className: "md:col-span-6 md:row-span-1 md:h-[213px]", aspect: "aspect-[4/3] md:aspect-auto" },
-      { className: "md:col-span-6 md:row-span-1 md:h-[213px]", aspect: "aspect-[4/3] md:aspect-auto" },
+      {
+        className: "md:col-span-6 md:row-span-1 md:h-[213px]",
+        aspect: "aspect-[4/3] md:aspect-auto",
+      },
+      {
+        className: "md:col-span-6 md:row-span-1 md:h-[213px]",
+        aspect: "aspect-[4/3] md:aspect-auto",
+      },
     ];
     return patterns[index % patterns.length];
   };
@@ -131,7 +172,9 @@ export default function GalleryPage() {
               onClick={() => setSelectedImageIndex(index)}
             >
               {/* Image Wrapper */}
-              <div className={`relative overflow-hidden bg-surface-container w-full h-full ${aspect}`}>
+              <div
+                className={`relative overflow-hidden bg-surface-container w-full h-full ${aspect}`}
+              >
                 {/* Blurred background image */}
                 <img
                   src={item.image}
@@ -141,7 +184,7 @@ export default function GalleryPage() {
                 {/* Main image */}
                 <img
                   src={item.image}
-                  alt={item.title || "Gallery image"}
+                  alt={"Gallery image"}
                   className="relative z-10 w-full h-full object-contain transition-transform duration-750 group-hover:scale-105"
                 />
               </div>
@@ -164,7 +207,9 @@ export default function GalleryPage() {
               setSelectedImageIndex(null);
             }}
           >
-            <span className="material-symbols-outlined block text-[24px]">close</span>
+            <span className="material-symbols-outlined block text-[24px]">
+              close
+            </span>
           </button>
 
           {/* Prev button */}
@@ -173,10 +218,14 @@ export default function GalleryPage() {
             disabled={selectedImageIndex === 0}
             onClick={(e) => {
               e.stopPropagation();
-              setSelectedImageIndex((prev) => (prev !== null && prev > 0 ? prev - 1 : prev));
+              setSelectedImageIndex((prev) =>
+                prev !== null && prev > 0 ? prev - 1 : prev,
+              );
             }}
           >
-            <span className="material-symbols-outlined block text-[24px]">arrow_back</span>
+            <span className="material-symbols-outlined block text-[24px]">
+              arrow_back
+            </span>
           </button>
 
           {/* Next button */}
@@ -185,10 +234,16 @@ export default function GalleryPage() {
             disabled={selectedImageIndex === galleryItems.length - 1}
             onClick={(e) => {
               e.stopPropagation();
-              setSelectedImageIndex((prev) => (prev !== null && prev < galleryItems.length - 1 ? prev + 1 : prev));
+              setSelectedImageIndex((prev) =>
+                prev !== null && prev < galleryItems.length - 1
+                  ? prev + 1
+                  : prev,
+              );
             }}
           >
-            <span className="material-symbols-outlined block text-[24px]">arrow_forward</span>
+            <span className="material-symbols-outlined block text-[24px]">
+              arrow_forward
+            </span>
           </button>
 
           {/* Image Container */}

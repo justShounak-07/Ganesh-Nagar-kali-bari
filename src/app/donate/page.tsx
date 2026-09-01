@@ -42,9 +42,8 @@ export default function DonatePage() {
   return (
     <div className="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24 space-y-20 animate-in fade-in duration-300">
       {/* 1. Page Header */}
-      <section className="text-center max-w-2xl mx-auto space-y-4">
+      <section className="text-center max-w-4xl mx-auto space-y-4">
         <SectionHeader
-          eyebrow="Seva & Support"
           title="Contribute to the Kali Bari"
           description="Your generous contributions help us sustain daily worship, maintain the historical structures, and fund local community medical and educational services."
         />
@@ -87,7 +86,25 @@ export default function DonatePage() {
         </div>
       </section>
 
-      {/* 3. Main Two-Column Payment & Form Grid */}
+      <section className="pt-2">
+        <div className="px-4 rounded-lg bg-surface-container-low text-center max-w-8xl mx-auto shadow-amber-100 animate-border-run">
+          <p className="font-sans text-sm md:text-base font-bold text-on-surface-variant leading-relaxed">
+            <span className="font-sans font-extrabold text-primary mr-1 text-base">
+              NOTE:
+            </span>
+            Your generous Donations to Ganesh Nagar Kali Bari are eligible for
+            tax exemption under-
+            <span className=" font-extrabold text-primary hover:underline hover:text-secondary transition-colors ">
+              Section 80G of the Income Tax Act,1961
+            </span>
+            . <br />
+            Kindly request a formal receipt after payment to claim your
+            deduction.
+          </p>
+        </div>
+      </section>
+
+      {/* Main Two-Column Payment & Form Grid */}
       <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         {/* Left Column: Ways to Donate */}
         <div className="lg:col-span-5 space-y-8">
@@ -117,9 +134,16 @@ export default function DonatePage() {
               </div>
             </div>
 
-            <div className="flex flex-col items-center justify-center p-6 bg-surface-container-low border border-dashed border-outline-variant/60 rounded text-center space-y-4">
-              {/* Generated QR Code Placeholder */}
-              <div className="bg-white p-3 rounded-lg border border-outline-variant/30 shadow-sm relative group overflow-hidden">
+            <h3 className="font-display text-lg md:text-xl font-bold text-on-surface">
+              COMING SOON...
+            </h3>
+
+            {/* UPCOMING UPI SCANNER AND UPI-ID */}
+
+            {/* <div className="flex flex-col items-center justify-center p-6 bg-surface-container-low border border-dashed border-outline-variant/60 rounded text-center space-y-4"> */}
+
+            {/* Generated QR Code Placeholder */}
+            {/* <div className="bg-white p-3 rounded-lg border border-outline-variant/30 shadow-sm relative group overflow-hidden">
                 <img
                   src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=ganeshnagarkalibari@upi%26pn=Ganesh%20Nagar%20Kali%20Bari"
                   alt="UPI QR Code Placeholder"
@@ -130,6 +154,7 @@ export default function DonatePage() {
                 <span className="font-sans text-xs font-bold text-on-surface-variant uppercase tracking-wider block">
                   Scan UPI ID:
                 </span>
+                
                 <code className="bg-surface px-3 py-1 rounded border border-outline-variant/30 text-sm font-semibold text-primary font-mono select-all">
                   {siteContent.bankDetails.upiId}
                 </code>
@@ -138,7 +163,7 @@ export default function DonatePage() {
                 Open Google Pay, PhonePe, Paytm, or any BHIM UPI app and scan or
                 copy the ID above to transfer funds directly.
               </p>
-            </div>
+            </div> */}
           </div>
 
           {/* Bank Transfer Card */}
@@ -200,6 +225,25 @@ export default function DonatePage() {
               </li>
             </ul>
           </div>
+          {/* Display Note message */}
+          <section className="pt-8">
+            <div className="p-6 rounded-lg bg-surface-container-low text-center max-w-2xl mx-auto shadow-sm animate-border-run">
+              <p className="font-sans text-sm md:text-base font-bold text-on-surface-variant leading-relaxed">
+                <span className="font-sans font-extrabold text-primary mr-1 text-base">
+                  IMPORTANT NOTE:
+                </span>
+                For any help regarding Donation or Receipt, kindly contact at
+                the assistance helpline at{" "}
+                <a
+                  href={`tel:${siteContent.contact.phone}`}
+                  className="font-extrabold text-primary hover:underline hover:text-secondary transition-colors"
+                >
+                  {siteContent.contact.phone}
+                </a>{" "}
+                for facing any payment issue and preventing Fraud .
+              </p>
+            </div>
+          </section>
         </div>
 
         {/* Right Column: Donation Form */}

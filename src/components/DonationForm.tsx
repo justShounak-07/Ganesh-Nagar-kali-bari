@@ -11,6 +11,7 @@ export const DonationForm: React.FC = () => {
     amount: "",
     date: "",
     transactionId: "",
+    panNumber: "",
     paymentMethod: "UPI",
     message: "",
   });
@@ -110,6 +111,7 @@ export const DonationForm: React.FC = () => {
               amount: "",
               date: "",
               transactionId: "",
+              panNumber: "",
               paymentMethod: "UPI",
               message: "",
             });
@@ -271,6 +273,25 @@ export const DonationForm: React.FC = () => {
               required
               className="w-full px-4 py-2.5 border border-outline rounded-default bg-surface hover:border-primary focus:border-primary focus:outline-none transition-colors text-base"
               placeholder="UPI Ref No. or Transaction ID"
+            />
+          </div>
+          {/* Pan No. */}
+          <div className="flex flex-col space-y-1.5">
+            <label
+              htmlFor="panNumber"
+              className="font-sans text-sm font-semibold text-on-surface-variant"
+            >
+              PAN No. *
+            </label>
+            <input
+              type="text"
+              id="panNumber"
+              name="panNumber"
+              value={formData.panNumber}
+              onChange={handleChange}
+              required
+              className="w-full px-4 py-2.5 border border-outline rounded-default bg-surface hover:border-primary focus:border-primary focus:outline-none transition-colors text-base"
+              placeholder="PAN Card Number"
             />
           </div>
 

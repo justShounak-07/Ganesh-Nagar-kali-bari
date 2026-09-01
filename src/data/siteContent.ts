@@ -51,11 +51,11 @@ export const siteContent = {
 
   bankDetails: {
     upiId: "ganeshnagarkalibari@upi",
-    accountName: "Ganesh Nagar Kali Bari Trust",
-    bankName: "State Bank of India",
-    accountNumber: "123456789012",
-    ifsc: "SBIN0001234",
-    branch: "Ganesh Nagar Branch",
+    accountName: "Ganesh nagar kali bari",
+    bankName: "Punjab National Bank ",
+    accountNumber: "1518001100000050",
+    ifsc: "PUNB0160300",
+    branch: "Mayur Vihar Phase-1 Branch",
   },
 
   donationFormConfig: {
@@ -145,37 +145,40 @@ export const siteContent = {
   // Expanded Festivals list matching layout requirements
   festivals: [
     {
-      name: "Kali Puja ",
-      description:
-        "Our premier annual festival, invoking the divine mother Kali on the new moon night of Kartik. A night of profound devotion, luminous offerings, and community unity.",
-      image: "/assets/idols/mk-2.jpeg",
-    },
-    {
       name: "Durga Puja",
       description:
         "The autumnal celebration of the Mother Goddess's victory over evil. Five days of intricate artistry, rhythmic dhaak beats, and joyous cultural gatherings.",
-      image: "/assets/idols/md-1.jpg",
+      image: "/assets/idols/dg.jpeg",
+    },
+    {
+      name: "Kali Puja ",
+      description:
+        "Our premier annual festival, invoking the divine mother Kali on the new moon night of Kartik. A night of profound devotion, luminous offerings, and community unity.",
+      image: "/assets/idols/kali-4.jpeg",
     },
     {
       name: "Saraswati Puja",
       description:
         "Honoring the Goddess of Knowledge, Music, and Art. A vibrant spring festival especially revered by students and artists.",
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuD57gc_3hF6L0fZ8lBSoz7eFbHvr4N7-JVrE-S8RxG-vS_U0jVn9AE6zLzQj1hRlzjl9356Mm538HtYuCFiCJmfQs-ygdNgmuYkCfx1knn9D7KKLvj8bd_69XRM3qGXwfCc3N5Ajt4au5ZCiGX0E0c_dwTOcCjvNsKsh0p2i9tycecdC9Mdh3MmNyEpy-khYY55d0MO7aftI50F5WZn3DKn9KmjMpPD6oxYJa5IRJclM_gps_gje00U",
+      image: "/assets/idols/saraswati.jpeg",
     },
     {
       name: "Maha Shivaratri",
       description:
         "The Great Night of Shiva. Devotees observe strict fasting and night-long vigils, offering Bilva leaves and holy water.",
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuAKlh-NdbVf7dpySp04jLV-LSZGkZEDFCPtEUI9c8Iie2Qr9jryiDgNX6tPKciA6_Pd2zkJh_5kq20B8DL9Y-nrXSt-f9-xSNVEW52uwVppKFVQ7kkl2PmimVn8fm-dzv1kxDOdSoG7cfyW8cg0LtyerHnignt1tZ2s2Gtfd7YnXWJGyVYlI-m8b1geB28vP0sZW9nBANqs1EA9BMCvu2CN8b2EQtPZG0R85BYd7c0W8-LQq18ygtgn",
+      image: "/assets/idols/shiva.jpeg",
     },
     {
       name: "Annapurna Puja",
       description:
         "Celebrating the Goddess of Food and Nourishment. Reliving the tradition of distributing cooked anna bhog to hundreds of devotees.",
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuAw1VFUORIpykp840YbbfQi7ztHoOK7Pgf2LTYi9uBmM60dYT1LKE7HYdlpZjDKVvEiFMmvA694X8qBq-lixlUnboKXbSC2zUPoppu8gAwICmlmZ_XLmlcH--7Fi23HYXJ1BRabJvKEPtdEhydVn0S2BBWyCld6KmvNMw12-FlDHJZ8EvrjF0NsN7b-QfJ-SIZ9bZSMjBS-UkNZS6EDjgvNLZawq_9QK_RKvCimWui6dL4ReAw6ox8c",
+      image: "/assets/idols/anna.jpeg",
+    },
+    {
+      name: "Lakshmi Puja",
+      description:
+        "Observed on Kojagari Purnima. Families and devotees join in prayers for prosperity, peace, and offerings of customized sweets.",
+      image: "/assets/idols/lx.jpeg",
     },
     {
       name: "Jagadhatri Puja",
@@ -192,13 +195,6 @@ export const siteContent = {
         "https://lh3.googleusercontent.com/aida-public/AB6AXuAw1VFUORIpykp840YbbfQi7ztHoOK7Pgf2LTYi9uBmM60dYT1LKE7HYdlpZjDKVvEiFMmvA694X8qBq-lixlUnboKXbSC2zUPoppu8gAwICmlmZ_XLmlcH--7Fi23HYXJ1BRabJvKEPtdEhydVn0S2BBWyCld6KmvNMw12-FlDHJZ8EvrjF0NsN7b-QfJ-SIZ9bZSMjBS-UkNZS6EDjgvNLZawq_9QK_RKvCimWui6dL4ReAw6ox8c",
     },
     {
-      name: "Lakshmi Puja",
-      description:
-        "Observed on Kojagari Purnima. Families and devotees join in prayers for prosperity, peace, and offerings of customized sweets.",
-      image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuAw1VFUORIpykp840YbbfQi7ztHoOK7Pgf2LTYi9uBmM60dYT1LKE7HYdlpZjDKVvEiFMmvA694X8qBq-lixlUnboKXbSC2zUPoppu8gAwICmlmZ_XLmlcH--7Fi23HYXJ1BRabJvKEPtdEhydVn0S2BBWyCld6KmvNMw12-FlDHJZ8EvrjF0NsN7b-QfJ-SIZ9bZSMjBS-UkNZS6EDjgvNLZawq_9QK_RKvCimWui6dL4ReAw6ox8c",
-    },
-    {
       name: "Bipattarini Puja",
       description:
         "Dedicated to Goddess Bipattarini, who relieves obstacles. Devotees tie sacred red threads representing protection.",
@@ -210,6 +206,12 @@ export const siteContent = {
       description:
         "Prayers offered to Lord Shiva for the health and longevity of children. Devotees light lamps near the Shiva Lingam in the evening.",
       image: "",
+    },
+    {
+      name: "Basanti Puja",
+      description:
+        "Dedicated to Goddess Basanti. Features gorgeous pandal installations and traditional arati.",
+      image: "/assets/idols/bs-2.jpeg",
     },
   ] as FestivalItem[],
 
