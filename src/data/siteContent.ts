@@ -205,7 +205,7 @@ export const siteContent = {
       name: "Neel Shasthi",
       description:
         "Prayers offered to Lord Shiva for the health and longevity of children. Devotees light lamps near the Shiva Lingam in the evening.",
-      image: "",
+      image: "/assets/idols/shiva.jpeg",
     },
     {
       name: "Basanti Puja",
