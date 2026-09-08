@@ -59,6 +59,12 @@ A dedicated historical section presenting the temple's background and developmen
 
 A dedicated festival section highlighting important celebrations and cultural events associated with the temple.
 
+<p align="center">
+  <img src="./screenshots/festivals.png"
+       alt="Festivals Page"
+       width="480">
+</p>
+
 ### 📅 Community Calendar
 
 A centralized space for presenting important dates, religious occasions, and community events.
@@ -71,6 +77,15 @@ A structured presentation of temple services and available seva-related informat
 
 A visual gallery for showcasing temple activities, festivals, celebrations, and community moments.
 
+<p align="center">
+  <img src="./screenshots/events.png"
+       alt="Gallery Page"
+       width="480">
+  <img src="./screenshots/services.png"
+       alt="Services Page"
+       width="480">
+</p>
+
 ### 💝 Donation Information
 
 A dedicated donation section designed to make contribution-related information easier for devotees to understand.
@@ -78,6 +93,15 @@ A dedicated donation section designed to make contribution-related information e
 ### 📍 Visit Us
 
 A dedicated visitor-information page containing essential information for people planning a visit.
+
+<p align="center">
+  <img src="./screenshots/visit.png"
+       alt="About Page"
+       width="480">
+  <img src="./screenshots/donate.png"
+       alt="Festivals Page"
+       width="480">
+</p>
 
 ### 🧩 Reusable UI Components
 
