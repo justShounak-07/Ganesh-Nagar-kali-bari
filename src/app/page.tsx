@@ -21,8 +21,7 @@ export default function HomePage() {
         </div>
         <div className="relative z-10 max-w-4xl mx-auto space-y-6">
           <h1 className="font-display text-4xl md:text-6xl font-bold text-white drop-shadow-lg leading-tight">
-            "May Maa Kali bless our community with strength, peace and
-            prosperity."
+            " Maa Kali bless Everyone with strength, peace and prosperity."
           </h1>
         </div>
       </section>
