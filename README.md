@@ -2,12 +2,6 @@
 
 > A modern, responsive digital presence for **Ganesh Nagar Kali Bari**, designed to bring the temple's heritage, festivals, services, community activities, and visitor information together in one accessible platform.
 
-[![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js&logoColor=white)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.x-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![Responsive](https://img.shields.io/badge/Design-Responsive-success)](#)
-[![Status](https://img.shields.io/badge/Status-Active_Development-orange)](#)
-
 ---
 
 ## ✨ Overview
@@ -115,12 +109,12 @@ This keeps the application easier to maintain and extend.
 ## 🛠️ Tech Stack
 
 | Technology       | Purpose                                      |
-| ---------------- | -------------------------------------------- | --- |
+| ---------------- | -------------------------------------------- |
 | **Next.js**      | React framework and application architecture |
 | **TypeScript**   | Type-safe development                        |
 | **Tailwind CSS** | Responsive UI styling                        |
 | **React**        | Component-based UI development               |
-| **ESLint**       | Code quality and consistency                 |     |
+| **ESLint**       | Code quality and consistency                 |
 | **Git & GitHub** | Version control and project management       |
 
 ---
@@ -134,37 +128,11 @@ The application is designed to provide a consistent experience across:
 - 📱 Mobile
 - 📟 Tablet
 
-Layouts and components are built with responsive behavior in mind so that important temple information remains accessible across different screen sizes.
+Layouts and components are built with responsive behavior MOBILE-FIRST APPROACH so that important information remains accessible across different screen sizes.
 
 ---
 
-## 🔮 Future Improvements
-
-Potential future iterations include:
-
-- [ ] Online donation/payment integration
-- [ ] Dynamic event management
-- [ ] Admin dashboard for content updates
-- [ ] Multilingual support
-- [ ] Temple announcements and notifications
-- [ ] Volunteer/community registration
-- [ ] Social media integration
-- [ ] SEO enhancements
-- [ ] Accessibility improvements
-- [ ] Performance monitoring and optimization
-- [ ] Deployment with a custom domain
-
 ---
-
-## 🌐 Deployment
-
-The project can be deployed using modern Next.js-compatible hosting platforms such as:
-
-- Vercel
-- Netlify
-- Self-hosted infrastructure
-
-For production deployment, environment-specific configuration and domain setup should be added according to the hosting provider.
 
 ---
 
